@@ -63,7 +63,7 @@ fetch(`https://gogoanime.herokuapp.com/anime-details/${name}`)
                 // - small image in top right corner.
                 thumbnail: {
                   url:
-                    'https://cdn.discordapp.com/attachments/931899522584551437/936155517678669874/1919d7715d0f029da3198f2dfcf4c7f8.jpg',
+                    `${data.animeImg}`,
                 },
                 // embed description
                 // - text on 3rd row
