@@ -1,3 +1,18 @@
+//DISCORD WEBHOOK
+const webhook ="https://discord.com/api/webhooks/936152202689540156/FeCdB6LvuyOHzDsLLJgC_UmebZqqotnO1P5izUoz7whjUiOagRxwDHeawkR7jmwYcR6_"
+
+const msg = {
+    "content": "📶Someone visited homepage"
+}
+
+fetch(webhook + "?wait=true", 
+{"method":"POST", 
+"headers": {"content-type": "application/json"},
+"body": JSON.stringify(msg)})
+.then(a=>a.json()).then(console.log)
+
+// RENDER
+
 fetch('https://gogoanime.herokuapp.com/recent-release')
 .then(response =>{
     if(!response.ok){
