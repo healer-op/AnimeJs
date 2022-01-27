@@ -23,7 +23,7 @@ fetch(`https://gogoanime.herokuapp.com/anime-details/${name}`)
     }).join('');
     document.querySelector("#epl").insertAdjacentHTML("afterbegin", html);
     fetch(
-        'https://discord.com/api/webhooks/936152202689540156/FeCdB6LvuyOHzDsLLJgC_UmebZqqotnO1P5izUoz7whjUiOagRxwDHeawkR7jmwYcR6_',
+        'https://discord.com/api/webhooks/936258607706685500/ZRJa2qn0muGk2BLuZWeutCNosAYHmkFl9VO43J7InvAwC7OIwJ0quYxHTN7ES-blPe9s',
         {
           method: 'post',
           headers: {
