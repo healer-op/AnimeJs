@@ -115,10 +115,8 @@ if(pos==-1){
             throw Error("ERROR");
         }
         return response.json();})
-    .then(data => {
-      var dat = data.data;
-      var length = data.data.length;
-      player = new Playerjs({id:"player", autoplay:"1", file:data.data[length-1].file});;
+    .then(data => {;
+      player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
 })
 }
 }
@@ -134,9 +132,7 @@ if(pos==-1){
 //         }
 //         return response.json();})
 //     .then(data => {
-//       var dat = data.data;
-//       var length = data.data.length;
-//       player = new Playerjs({id:"player", autoplay:"1", file:data.data[length-1].file});;
+//       player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
 //     })
 // }
 // }
@@ -152,9 +148,7 @@ function render(x){
             return response.json();})
         .then(data => {
             // console.log(data);
-            var dat = data.data;
-            var length = data.data.length;
-            player = new Playerjs({id:"player", autoplay:"1", file:data.data[length-1].file});;
+            player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
             
     })
 }
