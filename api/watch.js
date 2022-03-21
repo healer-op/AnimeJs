@@ -109,7 +109,7 @@ if(pos==-1){
     // console.log(name);
     document.getElementById("amain").innerHTML = name;
     
-    fetch(`https://gogoanime.herokuapp.com/gogo-server/watch/${name}`)
+    fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/${name}`)
     .then(response =>{
         if(!response.ok){
             throw Error("ERROR");
@@ -125,7 +125,7 @@ if(name){
     let pos = name.search("episode");
 if(pos){
     document.getElementById("amain").innerHTML = name;
-    fetch(`https://gogoanime.herokuapp.com/gogo-server/watch/${name}`)
+    fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/${name}`)
     .then(response =>{
         if(!response.ok){
             throw Error("ERROR");
@@ -140,7 +140,7 @@ if(pos){
 function render(x){
     var x = x;
     document.getElementById("amain").innerHTML = x;
-    fetch(`https://gogoanime.herokuapp.com/gogo-server/watch/${x}`)
+    fetch(`https://gogoanime.herokuapp.com/vidcdn/watch/${x}`)
         .then(response =>{
             if(!response.ok){
                 throw Error("ERROR");

@@ -116,8 +116,8 @@ if(pos==-1){
         }
         return response.json();})
     .then(data => {;
-      document.getElementById("player").src = data.referer;
-//       player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
+      // document.getElementById("player").src = data.referer;
+      player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
 })
 }
 }
@@ -149,8 +149,8 @@ function render(x){
             return response.json();})
         .then(data => {
             // console.log(data);
-            document.getElementById("player").src = data.referer;
-//             player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
+            // document.getElementById("player").src = data.referer;
+            player = new Playerjs({id:"player", autoplay:"1", file:data.referer});;
             
     })
 }
