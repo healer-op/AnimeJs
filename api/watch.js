@@ -132,7 +132,7 @@ if(pos){
         }
         return response.json();})
     .then(data => {
-        document.getElementById("player").src = data.referer;
+        document.getElementById("player").src = data.source[4].file;
     })
 }
 }
