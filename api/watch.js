@@ -148,7 +148,7 @@ function render(x){
             return response.json();})
         .then(data => {
             // console.log(data);
-            document.getElementById("player").src = data.referer;
+            document.getElementById("player").src = data.Referer;
             
     })
 }
